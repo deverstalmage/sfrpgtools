@@ -1363,3 +1363,271 @@ export const numberOfShops = {
   [CITY_SIZE_LARGE]: 5,
   [CITY_SIZE_HUGE]: 7,
 };
+
+
+
+
+
+
+
+//Heavenly Bodies
+
+//STARS
+export const mainStars = ["Red Star","Orange Star","Yellow Star","White Star"];
+export const giantStars = ["Red Giant","Orange Giant","Yellow Giant","Blue Giant"];
+export const supergiantStars = ["Red Supergiant","Orange Supergiant","Blue Supergiant"];
+export const otherStars = ["Protostar","Neutron Star","Pulsar","Imminent Supernova","White Dwarf","Red Dwarf","Brown Dwarf","Black Hole","Dyson Sphere","High Mass Debris Field"];
+export const systemlessObjects = ["Ark Ship","Generation Ship","Deep Space Research Station","Starless Planet"]
+
+export const starModifiers = ["Binary System","Nebula","Dust Rings","Energy Harvesting Devices","Stellar Engine"];
+
+//PLANETS
+export const terrestrialLife = ["Garden World","Rocky World","City World","Ocean World","Desert World","Forest World","Ice World","Lava World","Marsh World"];
+export const terrestrialNonLife = ["Rocky World","Ice World","Iron World","Coreless World","Carbon World","Debris Field","Destroyed World","Protoplanet"];
+export const artificialWorlds =["Ring World","Cube World","Ark Ship","Flat World","Shield World","Refuelling Station","Offworld Trading Post","Ship Scrapyard","Comet"];
+export const gasGiants = ["Small Gas World","Gas Giant","Hot Gas Giant","Cold Gas Giant"];
+
+export const worldModifiers = ["Rings","Super Rings","Terraformed","Terraform in Progress","Force Field","Surrounded by Synthetic Debris","Large Axial Tilt","Perpendicular Rotation"];
+
+//SATELLITES
+export const lifeMoons = ["Ice Moon","Forest Moon","Marsh Moon","Garden Moon","Rocky Moon","Volcanic Moon"];
+export const nonLifeMoons = ["Rocky Moon","Ice Moon","Iron Moon","Gas Moon","Captured Asteroid","Destroyed Moon"];
+export const artificialSatellites = ["Satellite Array","Space Station","Huge Space Station","Space Elevator","Planetary Defence Platform","Research Outpost","Drift Beacon","Artificial Moon","Orbital Drydock","Orbital Mirrors"];
+
+//ATMOSPHERE
+export const atmosphereType = ["Thin","Normal","Thick","No Atmosphere"];
+export const atmosphereMods = ["Corrosive","Toxic"];
+export const safeGases = ["Nitrogen","Oxygen","Argon","Helium","Neon"];
+export const gasGiantGases = ["Helium","Hydrogen","Methane","Ammonia", "Water Vapour"];
+export const corrosiveGases = ["Sulphuric Acid","Ammonia"];
+export const toxicGases = ["Ammonia","Methane","Carbon Monoxide","Carbon Dioxide","Hydrocarbons"];
+
+//BIOMES
+export const biomes = ["Aerial Terrain","Aquatic Terrain","Desert Terrain","Hill Terrain","Forest Terrain","Mountain Terrain","Marsh Terrain","Urban Terrain"]
+
+export const planetBiomes = {
+  "Garden World": ["Forest Terrain","Hill Terrain","Marsh Terrain","Aerial Terrain"],
+  "Rocky World": ["Desert Terrain","Aerial Terrain","Hill Terrain","Mountain Terrain"],
+  "City World": ["Urban Terrain"],
+  "Ocean World": ["Aquatic Terrain"],
+  "Desert World": ["Desert Terrain"],
+  "Forest World": ["Forest Terrain"],
+  "Ice World": ["Aquatic Terrain","Desert Terrain","Mountain Terrain"],
+  "Lava World": ["Desert Terrain","Hill Terrain","Mountain Terrain"],
+  "Marsh World": ["Marsh Terrain"],
+  "Iron World": ["Desert Terrain","Hill Terrain","Mountain Terrain","Aerial Terrain"],
+  "Coreless World": ["Desert Terrain","Hill Terrain","Mountain Terrain","Aerial Terrain"],
+  "Carbon World": ["Desert Terrain","Hill Terrain","Mountain Terrain","Aerial Terrain"],
+  "Debris Field": ["-"],
+  "Destroyed World": ["-"],
+  "Protoplanet": ["Desert Terrain","Hill Terrain","Mountain Terrain"],
+  "Ring World": ["Forest Terrain","Hill Terrain","Urban Terrain"],
+  "Cube World": ["Aquatic Terrain","Forest Terrain","Desert Terrain","Urban Terrain"],
+  "Flat World": ["Aquatic Terrain","Forest Terrain","Desert Terrain","Urban Terrain"],
+  "Shield World": ["Forest Terrain","Hill Terrain","Urban Terrain"],
+  "Ice Moon": ["Aquatic Terrain","Desert Terrain","Mountain Terrain"],
+  "Forest Moon": ["Forest Terrain"],
+  "Marsh Moon": ["Marsh Terrain"],
+  "Garden Moon": ["Forest Terrain","Hill Terrain","Mountain Terrain","Marsh Terrain","Aerial Terrain"],
+  "Artificial Moon": ["Forest Terrain","Hill Terrain","Mountain Terrain","Marsh Terrain","Aerial Terrain"],
+  "Rocky Moon": ["Desert Terrain","Aerial Terrain","Hill Terrain","Mountain Terrain"],
+  "Volcanic Moon": ["Desert Terrain","Hill Terrain"],
+  "Iron Moon": ["Desert Terrain","Hill Terrain","Mountain Terrain"],
+  "Captured Asteroid": ["Hill Terrain","Mountain Terrain"],
+  "Destroyed Moon": ["-"],
+  "Starless Planet": ["Aquatic Terrain","Desert Terrain","Hill Terrain","Forest Terrain","Mountain Terrain","Marsh Terrain","Urban Terrain"],
+  "Comet": ["Aquatic Terrain","Hill Terrain","Mountain Terrain","Urban Terrain"],
+}
+
+export const numberWords = ["Zero","One","Two","Three","Four","Five","Six","Seven","Eight","Nine","Ten","Eleven","Twelve","Thirteen","Fourteen","Fifteen","Sixteen"];
+
+export const flavourText = ["This world features a prominent ring system composed mainly of ice particles.",
+"A ring system made up of dust and ice surrounds this world.",
+"This world boasts a perpendicular ring system.",
+"A super ring system orbits this world, 200x the diameter of the world.",
+"This world is in the process of being terraformed.",
+"This world has undergone terraforming to make it habitable.",
+"An ancient terraforming platform lies inactive on the worlds surface.",
+"This world is surrounded by an impenetrable force field.",
+"Tons upon tons of synthetic debris floats in low orbit.",
+"The large axial tilt of this world produces violent seasons.",
+"This world rotates perpendicular to the solar plane.",
+"This world is tidally locked.",
+"This world features an eccentric orbit.",
+"The orbit of this world is retrograde compared to the other orbiting bodies.",
+"This world features retrograde rotation.",
+"Ancient alien ruins litter the surface of this world.",
+"Dormant alien technology lies on the surface.",
+"This world has vast supplies of precious minerals.",
+"The surrounding asteroids have been mined dry of all their resources.",
+"This world has been stripped of all resources.",
+"This world is giving off strange readings.",
+"This world is rich in natural resources.",
+"Severe storms cover this world.",
+"Severe winds, up to 200mph, belt the surface of this world.",
+"The weather changes rapidly on this world.",
+"This world is on a collision course with another celestial body.",
+"Ruins of an ancient civilization can be found here.",
+"The surface of this world is orange.",
+"The surface of this world is purple.",
+"The surface of this world is mint green.",
+"This world shows signs of being engineered to its current state.",
+"Cosmic rays bombard the surface of this world.",
+"Electrical storms surround the equator of this world.",
+"Solar wind is slowly stripping this worlds atmosphere.",
+"This world is a severe radiation hazard.",
+"The surface of this world is constantly bombarded by asteroids.",
+"Beautiful aurorae are frequently seen at the poles of this world.",
+"This world has a very strong magnetic field.",
+"This world has a weak magnetic field.",
+"Geomagnetic storms run wild through this worlds magnetosphere.",
+"Volcanic activity constantly reshapes this worlds surface.",
+"This world has geysers that spew large amounts of ice and rock into space.",
+"Constant meteor showers light up this worlds sky.",
+"This world has large polar ice caps.",
+"Frequenct earthquakes rock this world.",
+"Erratic storms disperse and form very quickly on this world.",
+"A robust magnetosphere protects this planet from all external radiation.",
+"This planet was recently impacted by a huge asteroid.",
+"A recent mass extinction has left this planet quiet and calm.",
+"A great storm ravaged the surface of this planet changing the state of its climate.",
+"Global warming destroyed this planets atmosphere.",
+"This planets biome used to be must more habitable than it is now.",
+"The crust of this planet has split open revealing vast sources of minerals.",
+"This world has long been abandoned."];
+
+export const flavourDict = {
+  "Satellite Array":
+  ["Planetary communications array.",
+  "This array provides global relocation and navigation.",
+  "This array is used for observation of the surrounding solar system.",
+  "This world is being monitored by unknown parties.",
+  "Geosynchronous satellites surround this world monitoring its state.",
+  "Thousands of tiny sat-cubes orbit this world in a tight network.",
+  "Several weather prediction satellites float above this world."],
+  "Space Station":
+  ["A lonely defunct space station.",
+  "This station has been abandoned by its creators.",
+  "A barely functioning hulk of metal and glass.",
+  "This space station serves as a home to many.",
+  "An ancient alien artifact still capable of harboring citizens.",
+  "A well maintained space station."],
+  "Huge Space Station":
+  ["A lonely defunct space station.",
+  "This station has been abandoned by its creators.",
+  "A barely functioning hulk of metal and glass.",
+  "This space station serves as a home to many.",
+  "An ancient alien artifact still capable of harboring citizens.",
+  "A well maintained space station."],
+  "Offworld Trading Post":
+  ["A central trading hub for nearby mines.",
+  "All kinds of metals and minerals can be found here.",
+  "A dock for huge interstellar haulers.",
+  "A trading post for nearby farms.",
+  "Serves as a hub for nearby ice haulers.",
+  "An abandoned trading post."],
+  "Planetary Defence Platform":
+  ["Holds a single massive cannon capable of ripping holes in even the largest starships.",
+  "Decrepit flak cannon.",
+  "Sensors detect platform is functioning and hostile.",
+  "One of many defense platforms orbiting this world.",
+  "Holds an array of missile launchers."],
+  "Asteroid Belt":
+  ["A circumstellar disc of ice and rock.",
+  "This belt contains several large plantains.",
+  "Asteroids of all, shapes, sizes, and content occupy this belt.",
+  "This belt is a rich source of minerals."],
+  "Ark Ship":
+  ["A ship patiently drifting through space.",
+  "This ships life support has failed, there are no survivors.",
+  "This ship set off before drift travel was gifted.",
+  "Maintenance crews live a die on this ship.",
+  "Massive amounts of cargo are kept alive by the ship systems.",
+  "The cargo of this ship are nearing their new home.",
+  "Unknown circumstances forced these travelers from their old home.",
+  "These travelers are seeking a new home."],
+  "Generation Ship":
+  ["A ship patiently drifting through space.",
+  "This ships life support has failed, there are no survivors.",
+  "This ship set off before drift travel was gifted.",
+  "Maintenance crews live a die on this ship.",
+  "Massive amounts of cargo are kept alive by the ship systems.",
+  "The cargo of this ship are nearing their new home.",
+  "Unknown circumstances forced these travelers from their old home.",
+  "These travelers are seeking a new home."],
+  "Deep Space Research Station":
+  ["A lonely station floating through the void of dark space.",
+  "This station is firmly anchored in the darkness of space.",
+  "The experiments carried out here confirm the nature of the universe.",
+  "The experiments conducted here require absolute isolation."],
+  "Debris Field":
+  ["The remains of a world that failed to form.",
+  "An unknown force smashed this world to pieces.",
+  "Large amounts of debris grouped together by gravity.",
+  "A field rich with natural resources.",
+  "Chunks of rock held together by alien technology.",
+  "A field of space rock almost impossible to navigate through."],
+  "Destroyed World":
+  ["This world was destroyed in a unknown cataclysm.",
+  "Tidal forces ripped this world apart.",
+  "An ancient battle was fought on this world, leaving it in pieces.",
+  "A freak event tore a hole in this world.",
+  "A destructive weapon was unleashed on this world.",
+  "This world was hit by a huge asteroid.",
+  "Massive volcanic activity spewed chunks of this world into space."],
+  "Destroyed Moon":
+  ["This moon was destroyed in a unknown cataclysm.",
+  "Tidal forces ripped this moon apart.",
+  "An ancient battle was fought on this moon, leaving it in pieces.",
+  "A freak event tore a hole in this moon.",
+  "A destructive weapon was unleashed on this moon.",
+  "This moon was hit by a huge asteroid.",
+  "Massive volcanic activity spewed chunks of this moon into space."],
+  "Ring World":
+  ["This ring is part of an interstellar cleansing array.",
+  "This ring is a temple for ancient cultures.",
+  "this ring was built to sustain all kinds of life.",
+  "This world is a gigantic space station with thousands of docks.",
+  "This ring world was built with alien technology."],
+  "Refuelling Station":
+  ["A place to refuel your ship.",
+  "Interstellar truck stop.",
+  "The sandwiches aren't bad.",
+  "Holds huge supplies of starship fuel.",
+  "The last refuelling station for 7 Parsecs."],
+  "Ship Scrapyard":
+  ["This scrapyard contains ships all all classes and sizes.",
+  "The place of a huge battle, full of destroyed ships.",
+  "You can find any starship part you might need here.",
+  "A decrepit naval fleet.",
+  "The remains of a ancient spacefaring civilization.",
+  "A flotilla made up of many thousands of ships."],
+  "Space Elevator":
+  ["The elevator brings supplies from the surface of this world.",
+  "Like a beanstalk floating in the clouds.",
+  "This tower is a monument to the civilisation that built it."],
+  "Research Outpost":
+  ["The world this station orbits is under observation.",
+  "Experiments are carried out here in the coldness of space.",
+  "Unethical experiments have been conducted here.",
+  "Holds expensive scientific equipment.",
+  "This station was abandoned."],
+  "Drift Beacon":
+  ["Serves as a navigational buoy for drift travel"],
+  "Orbital Drydock":
+  ["A naval drydock.",
+  "A privately owned drydock for starship repairs.",
+  "A starship workshop.",
+  "A decrepit half built starship occupies this dock.",
+  "Houses repair tools and diagnostic equipment."],
+  "Orbital Mirrors":
+  ["This mirror is placed to provide extra sunlight to agricultural colonies.",
+  "This array extends the daylight hours on this world to grow more food.",
+  "This set of mirrors redirects sunlight to the dark side of this world."],
+  "Comet":
+  ["The frozen surface of this comet is mined for precious ice.",
+  "A city has been built into the ice chasms of  this comet.",
+  "This comet is on a collision course with another body in this system.",
+  "A massive ball of ice and rock with a tail many times larger than its length.",
+  "The sunny side of this comet spews ice and debris into space creating a long tail."]
+}

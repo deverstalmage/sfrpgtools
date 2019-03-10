@@ -5,6 +5,7 @@ import { alias } from '@ember/object/computed';
 
 const CHARACTER_GENERATOR = 'Character Generator';
 const SETTLEMENT_GENERATOR = 'Settlement Generator';
+const STAR_SYSTEM_GENERATOR = 'Star System Generator';
 
 const generators = [
   {
@@ -14,7 +15,11 @@ const generators = [
   {
     name: SETTLEMENT_GENERATOR,
     slug: 'generators.settlement-generator',
-  }
+  },
+  {
+    name: STAR_SYSTEM_GENERATOR,
+    slug: 'generators.star-system-generator',
+  },
 ];
 
 export default Controller.extend({

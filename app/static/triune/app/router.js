@@ -10,6 +10,7 @@ Router.map(function () {
   this.route('generators', { path: '/' }, function() {
     this.route('character-generator');
     this.route('settlement-generator');
+    this.route('star-system-generator');
   });
 });
 
