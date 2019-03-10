@@ -1,7 +1,6 @@
 import Controller from '@ember/controller';
 import { computed } from '@ember/object';
 import { inject as service } from '@ember/service';
-import { alias } from '@ember/object/computed';
 
 const CHARACTER_GENERATOR = 'Character Generator';
 const SETTLEMENT_GENERATOR = 'Settlement Generator';
@@ -23,9 +22,7 @@ const generators = [
 ];
 
 export default Controller.extend({
-  sourcesService: service('sources'),
-  selectedSource: alias('sourcesService.selected'),
-  sources: alias('sourcesService.all'),
+  sources: service(),
   router: service(),
 
   generators: computed(function() {
@@ -37,6 +34,11 @@ export default Controller.extend({
 
   CHARACTER_GENERATOR,
   SETTLEMENT_GENERATOR,
+
+  selectSources(selectedSources) {
+    if (!selectedSources.length) return;
+    this.sources.select(selectedSources);
+  },
 
   selectGenerator(generator) {
     this.router.transitionTo(`${generators.find(gen => gen.name === generator).slug}`);
