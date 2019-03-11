@@ -1,1 +1,57 @@
-{{outlet}}
+<h1>Settlement Generator</h1>
+<p local-class="subtitle">Generates settlements for the Starfinder RPG to help fill your worlds.</p>
+
+{{#power-select
+  onchange=(action (mut selectedSize))
+  options=sizes
+  selected=selectedSize
+  as |size|
+}}
+  {{size}}
+{{/power-select}}
+
+{{#power-select
+  onchange=(action (mut selectedMaxItemLevel))
+  options=maxItemLevels
+  selected=selectedMaxItemLevel
+  as |level|
+}}
+  {{level}}
+{{/power-select}}
+
+<button
+  title="magic, baby"
+  local-class="generate-button"
+  onclick={{action generate}}
+>
+  Generate
+</button>
+
+<button
+  title="magic, baby"
+  local-class="clear-button"
+  onclick={{action clear}}
+  disabled={{not systems.length}}
+>
+  Clear
+</button>
+
+{{#each settlementContent as |settlement|}}
+  <div local-class="content">
+    <div local-class="panel-header">
+      <h4>{{settlement.name}}</h4>
+      <p>{{settlement.alignment}} {{settlement.type}}</p>
+    </div>
+    <div local-class="panel-body">
+      <div><strong>Population</strong>: {{settlement.population}}</div>
+      <div><strong>Government</strong>: {{settlement.government}}</div>
+      <div><strong>Qualities</strong>: {{settlement.qualities}}</div>
+      <div><strong>Max Item Level</strong>: {{settlement.maxItemLevel}}</div>
+      <hr>
+      {{#each settlement.placesOfInterest as |place|}}
+        <div><strong>{{place.name}}</strong></div>
+        <p>{{place.description}}</p>
+      {{/each}}
+    </div>
+  </div>
+{{/each}}
